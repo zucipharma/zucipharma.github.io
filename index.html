@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+    <title>Language Selection</title>
+    <style>
+        .content {
+            display: none;
+        }
+        .header-image {
+            width: 100%;
+            max-height: 300px; /* Sets a max height for the header image */
+            overflow: hidden;
+        }
+        .header-image img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra whitespace around the image */
+        }
+
+        #gujaratiContent {
+            font-family: 'Anek Gujarati';
+        }
+
+        #gujaratiContent p {
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        function showContent(language) {
+            document.getElementById("englishContent").style.display = language === 'english' ? 'block' : 'none';
+            document.getElementById("gujaratiContent").style.display = language === 'gujarati' ? 'block' : 'none';
+        }
+
+        // Set default display to English
+        window.onload = function() {
+            showContent('english');
+        }
+    </script>
+</head>
+<body>
+    <label>
+        <input type="radio" name="language" value="english" onclick="showContent('english')" checked> English
+    </label>
+    <label>
+        <input type="radio" name="language" value="gujarati" onclick="showContent('gujarati')"> Gujarati
+    </label>
+
+    <div id="englishContent" class="content">
+        <h2>Administration Information</h2>
+        <ol type="1">
+          <li><b>RISOFOS</b> Tablets should be taken at least 30 minutes before the first food or drink of the day other than water and before taking any oral medication or supplementation, including calcium, antacids, or vitamins to maximize absorption and clinical benefit. </br> The use of water with supplements, including mineral water, should be avoided because they may have a higher concentration of calcium.</li>
+      </br>
+          <li><span>To facilitate delivery to the stomach, <b>RISOFOS</b> Tablets should be swallowed in an upright position, with a full glass of plain water (approx. 200 ml).</span>
+              </br>
+              <img src="stadingman.png" style="width: 100px; height: 100px;"/>
+          </li>
+          </br>
+          <li>Patients should not lie down for 30 minutes after taking the medication.
+              </br>
+              <img src="sleepingman.jpg" style="width: 400px; height: 100px;">
+          </li>
+          </br>
+          <li>Patients should not eat or drink anything except plain water or take other medications for at least 30 minutes after taking <b>RISOFOS</b> Tablets. 
+</li>
+        </ol>
+        <p>The tablet should not be chewed or sucked because of a potential for oropharyngeal ulceration.</p>
+
+    <p>Patients should receive supplemental calcium and vitamin D if dietary intake is inadequate.</p>
+
+    <p>Calcium supplements and calcium-, aluminium-, iron-, and magnesium-containing medications may interfere with the absorption of <b>RISOFOS</b> Tablets and should be taken at a different time of the day.</p>
+
+    <p>If you develop symptoms of oesophageal disease (such as difficulty or pain upon swallowing, retrosternal pain, or severe persistent or worsening heartburn), you should consult your physician before continuing <b>RISOFOS</b> Tablets.</p>
+
+    <p>Always give an accurate medication history to all of your healthcare providers and tell them that you are taking <b>RISOFOS</b> Tablets.</p>
+
+    <h3>Missed Dose</h3>
+    <p>If a dose of <b>RISOFOS 35</b> once-a-week is missed:</p>
+    <ul>
+        <li>Take one tablet on the morning after you remember and return to taking one tablet once-a-week, as originally scheduled on your chosen day.</li>
+        <li>Do not take two tablets on the same day.</li>
+    </ul>
+        <!-- Add more content as per the English text -->
+    </div>
+
+    <div id="gujaratiContent" class="content">
+        <h2>ઉપયોગ માહિતી</h2>
+        <ol type="1">
+          <li>રિસોફોસ ટેબ્લેટને તેના મહત્તમ શોષણ અને ક્લિનિકલ લાભ માટે દિવસના પ્રથમ ખોરાક, કેલ્શિયમ, એન્ટાસિડ્સ, વિટામિન્સ સહિત કોઈપણ મૌખિક દવા / સપ્લિમેન્ટ્સ અને પાણી સિવાયના કોઇ પણ પીણાના ઓછામાં ઓછા ૩૦ મિનિટ પહેલાં લો. રિસોફોસ ટેબ્લેટ મીનરલ પાણી સાથે ના લેવી જોઈએ કારણ કે તેમાં કેલ્શિયમનું પ્રમાણ વધુ હોઈ શકે છે.</li>
+      </br>
+          <li><span>રિસોફોસ ટેબ્લેટને સીધી પેટમાં પહોંચાડવા માટે, એક સીધી સ્થિતિમાં, સાદા પાણીના એક સંપૂર્ણ ગ્લાસ (અંદાજે 200 મિલી) સાથે ગળી જવી જોઈએ.</span>
+              </br>
+              <img src="stadingman.png" style="width: 100px; height: 100px;"/>
+          </li>
+          </br>
+          <li> દવા લીધા પછી દર્દીઓએ ૩૦ મિનિટ સુધી સૂવું ન જોઈએ.
+              </br>
+              <img src="sleepingman.jpg" style="width: 400px; height: 100px;">
+          </li>
+          </br>
+          <li>રિસોફોસ ટેબ્લેટ લીધા પછી ઓછામાં ઓછા 30 મિનિટ સુધી દર્દીએ સાદા પાણી સિવાય કંઈપણ ખાવું કે પીવું જોઈએ નહીં અને અન્ય દવા પણ લેવી જોઈએ નહીં.</li>
+        </ol>
+        <p>મોઢામાં ચાંદા પડવાની સંભાવનાને કારણે ટેબ્લેટને ચાવવી અથવા ચૂસવી ન જોઈએ.</p>
+
+    <p>જો આહારમાં કેલ્શિયમ અને વિટામિન-ડીનું અપૂરતું પ્રમાણ હોય તો દર્દીને પુરક કેલ્શિયમ અને વિટામિન-ડીના સપ્લિમેન્ટ્સ લેવા જોઈએ.</p>
+
+    <p>કેલ્શિયમ સપ્લિમેન્ટ્સ અને કેલ્શિયમ, એલ્યુમિનિયમ, આયર્ન, મેગ્નેશિયમ ધરાવતી દવાઓ રિસોફોસ ટેબ્લેટ્સના શોષણમાં દખલ કરી શકે છે માટે તેને તે દિવસના અલગ સમયે લેવી જોઈએ.</p>
+
+    <p>જો તમને અન્નનળીના રોગના લક્ષણો (જેમ કે ગળવામાં તકલીફ અથવા દુખાવો, પાછળના ભાગમાં દુખાવો, અથવા સતત હદયમાં બળતરા, એસીડિટી) દેખાય, તો તમારે રિસોફોસ ટેબ્લેટ્સ ચાલુ રાખતા પહેલા તમારા ચિકિત્સકની સલાહ લેવી જોઈએ.</p>
+
+    <p>તમારા તમામ ચિકિત્સકને હંમેશા ચોક્કસ દવાઓનો ઇતિહાસ આપો અને તેમને જણાવો કે તમે રિસોફોસ ટેબ્લેટ લઈ રહ્યા છો.</p>
+
+    <p>જો અઠવાડિયામાં એકવાર રિસોફોસ ૩૫ ટેબ્લેટ લેવાનું ચૂકી જવાય તો:</p>
+    <ul>
+        <li>તમને યાદ આવ્યા પછી તરત સવારે એક ટેબ્લેટ લો અને તમારા પસંદ કરેલા મૂળ દિવસે સુનિશ્ચિત કર્યા મુજબ, અઠવાડિયામાં એકવાર એક ટેબ્લેટ લેવા પર પાછા ફરો.</li>
+        <li>એક જ દિવસે બે ગોળી ન લો.</li>
+    </ul>
+    </div>
+    <div class="disclaimer">
+        <h3 align="center" style="color: red;">Legal Disclaimer</h3>
+        <p>All content is created and published for informational purposes only. It is not intended to be a substitute for professional medical advice and should not be relied on as health or personal advice. Always seek the guidance of your doctor or other qualified health professional with any questions you may have regarding your health or a medical condition. If you think you have a medical emergency, call your doctor or go to the nearest hospital emergency department.</p>
+    </div>
+    <img src="zuci.png" class="header-image">
+</body>
+</html>
