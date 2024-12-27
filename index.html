@@ -1,126 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
-    <title>Language Selection</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+        <title>Language Selection</title>
+        <style>
         .content {
-            display: none;
+        display: none;
         }
         .header-image {
-            width: 100%;
-            max-height: 300px; /* Sets a max height for the header image */
-            overflow: hidden;
+        width: 100%;
+        max-height: 300px; /* Sets a max height for the header image */
+        overflow: hidden;
         }
         .header-image img {
-            width: 100%;
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Remove any extra whitespace around the image */
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any extra whitespace around the image */
         }
-
         #gujaratiContent {
-            font-family: 'Anek Gujarati';
+        font-family: 'Anek Gujarati';
         }
-
         #gujaratiContent p {
-            margin-left: 10px;
+        margin-left: 10px;
         }
-    </style>
-    <script>
+        </style>
+        <script>
         function showContent(language) {
-            document.getElementById("englishContent").style.display = language === 'english' ? 'block' : 'none';
-            document.getElementById("gujaratiContent").style.display = language === 'gujarati' ? 'block' : 'none';
+        document.getElementById("englishContent").style.display = language === 'english' ? 'block' : 'none';
+        document.getElementById("gujaratiContent").style.display = language === 'gujarati' ? 'block' : 'none';
+        document.getElementById("hindiContent").style.display = language === 'hindi' ? 'block' : 'none';
         }
-
         // Set default display to English
         window.onload = function() {
-            showContent('english');
+        showContent('english');
         }
-    </script>
-</head>
-<body>
-    <label>
-        <input type="radio" name="language" value="english" onclick="showContent('english')" checked> English
-    </label>
-    <label>
-        <input type="radio" name="language" value="gujarati" onclick="showContent('gujarati')"> Gujarati
-    </label>
-
-    <div id="englishContent" class="content">
-        <h2>Administration Information</h2>
-        <ol type="1">
-          <li><b>RISOFOS</b> Tablets should be taken at least 30 minutes before the first food or drink of the day other than water and before taking any oral medication or supplementation, including calcium, antacids, or vitamins to maximize absorption and clinical benefit. </br> The use of water with supplements, including mineral water, should be avoided because they may have a higher concentration of calcium.</li>
-      </br>
-          <li><span>To facilitate delivery to the stomach, <b>RISOFOS</b> Tablets should be swallowed in an upright position, with a full glass of plain water (approx. 200 ml).</span>
-              </br>
-              <img src="stadingman.png" style="width: 100px; height: 100px;"/>
-          </li>
-          </br>
-          <li>Patients should not lie down for 30 minutes after taking the medication.
-              </br>
-              <img src="sleepingman.jpg" style="width: 400px; height: 100px;">
-          </li>
-          </br>
-          <li>Patients should not eat or drink anything except plain water or take other medications for at least 30 minutes after taking <b>RISOFOS</b> Tablets. 
-</li>
+        </script>
+    </head>
+    <body>
+        <label>
+            <input type="radio" name="language" value="english" onclick="showContent('english')" checked> English
+        </label>
+        <label>
+            <input type="radio" name="language" value="gujarati" onclick="showContent('gujarati')"> Gujarati
+        </label>
+        <label>
+            <input type="radio" name="language" value="hindi" onclick="showContent('hindi')"> Hindi
+        </label>
+        <div id="englishContent" class="content">
+            
+            <h2>RISOBIS 35</h2>
+            <p><b>Each tablet contains:</b> Risedronate Sodium 35 mg</p>
+            
+            <h2>How to Take RISOBIS 35</h2>
+            <ol type="1">
+                <li>Pick a convenient day of the week that best fits your schedule to take your RISOBIS 35 tablet.
+                </li>
+                </br>
+                <li>Take Risobis 35 tablet on the same day of each week.
+                </li>
+                </br>
+                <li><b>RISOBIS 35</b> Tablets should be taken at least 30 minutes before the first food or drink of the day other than water and before taking any oral medication or supplementation, including calcium, antacids, or vitamins to maximize absorption and clinical benefit. </br></br> The use of water with supplements, including mineral water, should be avoided because they may have a higher concentration of calcium.</li>
+                </br>
+                <li><span>To facilitate delivery to the stomach, <b>RISOBIS 35</b> Tablets should be swallowed in an upright position, with a full glass of plain water (approx. 200 ml).</span>
+                </br>
+                <img src="stadingman.png" style="width: 100px; height: 100px;"/>
+            </li>
+            </br>
+            <li>Patients should not lie down for 30 minutes after taking the medication.
+                </br>
+                <img src="sleepingman.jpg" style="width: 400px; height: 100px;">
+            </li>
+            </br>
+            <li>Patients should not eat or drink anything except plain water or take other medications for at least 30 minutes after taking <b>RISOBIS 35</b> Tablets.
+            </li>
+            </br>
+            <li>The tablet should not be chewed or sucked because of a potential for oropharyngeal ulceration.</li> </br>
+            <li>Patients should receive supplemental calcium and vitamin D if dietary intake is inadequate.</li> </br>
         </ol>
-        <p>The tablet should not be chewed or sucked because of a potential for oropharyngeal ulceration.</p>
-
-    <p>Patients should receive supplemental calcium and vitamin D if dietary intake is inadequate.</p>
-
-    <p>Calcium supplements and calcium-, aluminium-, iron-, and magnesium-containing medications may interfere with the absorption of <b>RISOFOS</b> Tablets and should be taken at a different time of the day.</p>
-
-    <p>If you develop symptoms of oesophageal disease (such as difficulty or pain upon swallowing, retrosternal pain, or severe persistent or worsening heartburn), you should consult your physician before continuing <b>RISOFOS</b> Tablets.</p>
-
-    <p>Always give an accurate medication history to all of your healthcare providers and tell them that you are taking <b>RISOFOS</b> Tablets.</p>
-
-    <h3>Missed Dose</h3>
-    <p>If a dose of <b>RISOFOS 35</b> once-a-week is missed:</p>
-    <ul>
-        <li>Take one tablet on the morning after you remember and return to taking one tablet once-a-week, as originally scheduled on your chosen day.</li>
-        <li>Do not take two tablets on the same day.</li>
-    </ul>
+        
+        <p>Calcium supplements and calcium-, aluminium-, iron-, and magnesium-containing medications may interfere with the absorption of <b>RISOBIS 35</b> Tablets and should be taken at a different time of the day.</p>
+        <p style="color: red;">If you develop symptoms of oesophageal disease (such as difficulty or pain upon swallowing, retrosternal pain, or severe persistent or worsening heartburn), you should consult your physician before continuing <b>RISOBIS 35</b> Tablets.</p>
+        <p style="color: red;">Always give an accurate medication history to all of your healthcare providers and tell them that you are taking <b>RISOBIS 35</b> Tablets.</p>
+        <h3>Missed Dose</h3>
+        <p>If a dose of <b>RISOBIS 35 35</b> once-a-week is missed:</p>
+        <ul>
+            <li>Take one tablet on the morning after you remember and return to taking one tablet once-a-week, as originally scheduled on your chosen day.</li>
+            <li>Do not take two tablets on the same day.</li>
+        </ul>
         <!-- Add more content as per the English text -->
     </div>
-
     <div id="gujaratiContent" class="content">
-        <h2>ઉપયોગ માહિતી</h2>
+        <h2>RISOBIS 35</h2>
+        <p>દરેક ટેબ્લેટ રિસેડ્રોનેટ સોડિયમ 35 મિલિગ્રામ ધરાવે છે</p>
+        
+        <h2>રિસોબીસ 35 ટેબ્લેટ કેવી રીતે લેવી</h2>
         <ol type="1">
-          <li>રિસોફોસ ટેબ્લેટને તેના મહત્તમ શોષણ અને ક્લિનિકલ લાભ માટે દિવસના પ્રથમ ખોરાક, કેલ્શિયમ, એન્ટાસિડ્સ, વિટામિન્સ સહિત કોઈપણ મૌખિક દવા / સપ્લિમેન્ટ્સ અને પાણી સિવાયના કોઇ પણ પીણાના ઓછામાં ઓછા ૩૦ મિનિટ પહેલાં લો. રિસોફોસ ટેબ્લેટ મીનરલ પાણી સાથે ના લેવી જોઈએ કારણ કે તેમાં કેલ્શિયમનું પ્રમાણ વધુ હોઈ શકે છે.</li>
-      </br>
-          <li><span>રિસોફોસ ટેબ્લેટને સીધી પેટમાં પહોંચાડવા માટે, એક સીધી સ્થિતિમાં, સાદા પાણીના એક સંપૂર્ણ ગ્લાસ (અંદાજે 200 મિલી) સાથે ગળી જવી જોઈએ.</span>
-              </br>
-              <img src="stadingman.png" style="width: 100px; height: 100px;"/>
-          </li>
-          </br>
-          <li> દવા લીધા પછી દર્દીઓએ ૩૦ મિનિટ સુધી સૂવું ન જોઈએ.
-              </br>
-              <img src="sleepingman.jpg" style="width: 400px; height: 100px;">
-          </li>
-          </br>
-          <li>રિસોફોસ ટેબ્લેટ લીધા પછી ઓછામાં ઓછા 30 મિનિટ સુધી દર્દીએ સાદા પાણી સિવાય કંઈપણ ખાવું કે પીવું જોઈએ નહીં અને અન્ય દવા પણ લેવી જોઈએ નહીં.</li>
+            <li>રિસોબીસ 35 ટેબ્લેટ લેવા માટે તમારા શેડ્યૂલ સાથે શ્રેષ્ઠ રીતે બંધબેસતો અઠવાડિયાનો એક અનુકૂળ દિવસ પસંદ કરો.</li></br>
+            <li>દર અઠવાડિયે એક જ (સેમ જ) દિવસે રિસોબીસ 35 ટેબ્લેટ લો.</li></br>
+            <li>રિસોબીસ 35 ટેબ્લેટને તેના મહત્તમ શોષણ અને ક્લિનિકલ લાભ માટે દિવસના પ્રથમ ખોરાક, કેલ્શિયમ, એન્ટાસિડ્સ, વિટામિન્સ સહિત કોઈપણ મૌખિક દવા / સપ્લિમેન્ટ્સ અને પાણી સિવાયના કોઇ પણ પીણાના ઓછામાં ઓછા ૩૦ મિનિટ પહેલાં લો. રિસોબીસ 35 ટેબ્લેટ મીનરલ પાણી સાથે ના લેવી જોઈએ કારણ કે તેમાં કેલ્શિયમનું પ્રમાણ વધુ હોઈ શકે છે.</li>
+            </br>
+            <li><span>રિસોબીસ 35 ટેબ્લેટને સીધી પેટમાં પહોંચાડવા માટે, એક સીધી સ્થિતિમાં, સાદા પાણીના એક સંપૂર્ણ ગ્લાસ (અંદાજે 200 મિલી) સાથે ગળી જવી જોઈએ.</span>
+            </br>
+            <img src="stadingman.png" style="width: 100px; height: 100px;"/>
+            </li>
+            </br>
+            <li> દવા લીધા પછી દર્દીઓએ ૩૦ મિનિટ સુધી સૂવું ન જોઈએ.
+                </br>
+                <img src="sleepingman.jpg" style="width: 400px; height: 100px;">
+            </li>
+            </br>
+            <li>રિસોબીસ 35 ટેબ્લેટ લીધા પછી ઓછામાં ઓછા 30 મિનિટ સુધી દર્દીએ સાદા પાણી સિવાય કંઈપણ ખાવું કે પીવું જોઈએ નહીં અને અન્ય દવા પણ લેવી જોઈએ નહીં.</li>
+            </br>
+            <li>મોઢામાં ચાંદા પડવાની સંભાવનાને કારણે ટેબ્લેટને ચાવવી અથવા ચૂસવી ન જોઈએ.</li>
+            </br>
+            <li>જો આહારમાં કેલ્શિયમ અને વિટામિન-ડીનું અપૂરતું પ્રમાણ હોય તો દર્દીને પુરક કેલ્શિયમ અને વિટામિન-ડીના સપ્લિમેન્ટ્સ લેવા જોઈએ.</li>
+            </br>
         </ol>
-        <p>મોઢામાં ચાંદા પડવાની સંભાવનાને કારણે ટેબ્લેટને ચાવવી અથવા ચૂસવી ન જોઈએ.</p>
-
-    <p>જો આહારમાં કેલ્શિયમ અને વિટામિન-ડીનું અપૂરતું પ્રમાણ હોય તો દર્દીને પુરક કેલ્શિયમ અને વિટામિન-ડીના સપ્લિમેન્ટ્સ લેવા જોઈએ.</p>
-
-    <p>કેલ્શિયમ સપ્લિમેન્ટ્સ અને કેલ્શિયમ, એલ્યુમિનિયમ, આયર્ન, મેગ્નેશિયમ ધરાવતી દવાઓ રિસોફોસ ટેબ્લેટ્સના શોષણમાં દખલ કરી શકે છે માટે તેને તે દિવસના અલગ સમયે લેવી જોઈએ.</p>
-
-    <p>જો તમને અન્નનળીના રોગના લક્ષણો (જેમ કે ગળવામાં તકલીફ અથવા દુખાવો, પાછળના ભાગમાં દુખાવો, અથવા સતત હદયમાં બળતરા, એસીડિટી) દેખાય, તો તમારે રિસોફોસ ટેબ્લેટ્સ ચાલુ રાખતા પહેલા તમારા ચિકિત્સકની સલાહ લેવી જોઈએ.</p>
-
-    <p>તમારા તમામ ચિકિત્સકને હંમેશા ચોક્કસ દવાઓનો ઇતિહાસ આપો અને તેમને જણાવો કે તમે રિસોફોસ ટેબ્લેટ લઈ રહ્યા છો.</p>
-
-    <p>જો અઠવાડિયામાં એકવાર રિસોફોસ ૩૫ ટેબ્લેટ લેવાનું ચૂકી જવાય તો:</p>
+        <p>કેલ્શિયમ સપ્લિમેન્ટ્સ અને કેલ્શિયમ, એલ્યુમિનિયમ, આયર્ન, મેગ્નેશિયમ ધરાવતી દવાઓ રિસોબીસ 35 ટેબ્લેટ્સના શોષણમાં દખલ કરી શકે છે માટે તેને તે દિવસના અલગ સમયે લેવી જોઈએ.</p>
+        <p style="color: red;">જો તમને અન્નનળીના રોગના લક્ષણો (જેમ કે ગળવામાં તકલીફ અથવા દુખાવો, પાછળના ભાગમાં દુખાવો, અથવા સતત હદયમાં બળતરા, એસીડિટી) દેખાય, તો તમારે રિસોબીસ 35 ટેબ્લેટ્સ ચાલુ રાખતા પહેલા તમારા ચિકિત્સકની સલાહ લેવી જોઈએ.</p>
+        <p style="color: red;">તમારા તમામ ચિકિત્સકને હંમેશા ચોક્કસ દવાઓનો ઇતિહાસ આપો અને તેમને જણાવો કે તમે રિસોબીસ 35 ટેબ્લેટ લઈ રહ્યા છો.</p>
+        <p>જો અઠવાડિયામાં એકવાર રિસોબીસ 35 ટેબ્લેટ લેવાનું ચૂકી જવાય તો:</p>
+        <ul>
+            <li>તમને યાદ આવ્યા પછી તરત સવારે એક ટેબ્લેટ લો અને તમારા પસંદ કરેલા મૂળ દિવસે સુનિશ્ચિત કર્યા મુજબ, અઠવાડિયામાં એકવાર એક ટેબ્લેટ લેવા પર પાછા ફરો.</li>
+            <li>એક જ દિવસે બે ગોળી ન લો.</li>
+        </ul>
+    </div>
+    <div id="hindiContent" class="content">
+        <h2>रिसोबिस 35</h2>
+        <p>प्रत्येक टैबलेट में राइजड्रोनेट सोडियम 35 मिलीग्राम शामिल हैं.</p>
+        
+        <h2>रिसोबिस 35 कैसे लें</h2>
+        <ol type="1">
+            <li>रिसोबिस 35 टैबलेट लेने के लिए सप्ताह का एक सुविधाजनक दिन चुनें जो आपके शेड्यूल के लिए सबसे उपयुक्त हो.
+            </li>
+            </br>
+            <li>रिसोबिस 35 टैबलेट प्रत्येक सप्ताह के एक ही दिन लें.
+            </li>
+            </br>
+            <li>रिसोबिस 35 टैबलेट के नैदानिक लाभ को अधिकतम करने के लिए टैबलेट को पानी के अलावा दिन के पहले भोजन या पेय से कम से कम 30 मिनट पहले और कैल्शियम, एंटासिड या विटामिन सहित कोई भी मौखिक दवा या पूरक लेने से पहले लिया जाना चाहिए। मिनरल वाटर सहित पूरकों वाले पानी के उपयोग से बचना चाहिए क्योंकि इनमें कैल्शियम की मात्रा अधिक हो सकती है</li>
+            </br>
+            <li><span>रिसोबिस 35 टैबलेट को पेट में सीधा पहुंचाने के लिए, टैबलेट को एक सीधी स्थिति में, एक पूर्ण गिलास सादे पानी (लगभग 200 मिलीलीटर) के साथ निगलना चाहिए.</span>
+            </br>
+            <img src="stadingman.png" style="width: 100px; height: 100px;"/>
+        </li>
+        </br>
+        <li>मरीज को दवा लेने के बाद 30 मिनट तक लेटना नहीं चाहिए।
+            </br>
+            <img src="sleepingman.jpg" style="width: 400px; height: 100px;">
+        </li>
+        </br>
+        <li>मरीज को रिसोबिस 35 टैबलेट लेने के बाद कम से कम 30 मिनट तक सादे पानी के अलावा कुछ भी खाना या पीना नहीं चाहिए या अन्य दवाएं नहीं लेनी चाहिए.
+        </li>
+        </br>
+        <li>ऑरोफरीन्जियल अल्सरेशन की संभावना के कारण टैबलेट को चबाया या चूसा नहीं जाना चाहिए.</li> </br>
+        <li>यदि आहार का सेवन अपर्याप्त है तो मरीजों को पूरक कैल्शियम और विटामिन डी लेना चाहिए.</li> </br>
+    </ol>
+    <p>कैल्शियम की खुराक और कैल्शियम-, एल्युमीनियम-, आयरन- और मैग्नीशियम युक्त दवाएं रिसोबिस टैबलेट के अवशोषण में हस्तक्षेप कर सकती हैं और इन्हें दिन के एक अलग समय पर लिया जाना चाहिए.</p>
+    <p style="color: red;">यदि आपमें ग्रासनली रोग के लक्षण विकसित होते हैं (जैसे कि निगलने में कठिनाई या दर्द, रेट्रोस्टर्नल दर्द, या गंभीर लगातार पेट में जलन), तो आपको रिसोबिस टैबलेट जारी रखने से पहले अपने चिकित्सक से परामर्श करना चाहिए.</p>
+    <p style="color: red;">अपने सभी स्वास्थ्य सेवा प्रदाताओं को हमेशा दवा का सटीक इतिहास बताएं और उन्हें बताएं कि आप रिसोबिस टैबलेट ले रहे हैं.
+    </p>
+    <h3>Missed Dose (छूटी हुई खुराक)</h3>
+    <p>यदि सप्ताह में एक बार  रिसोबिस 35 की खुराक छूट जाती है:</p>
     <ul>
-        <li>તમને યાદ આવ્યા પછી તરત સવારે એક ટેબ્લેટ લો અને તમારા પસંદ કરેલા મૂળ દિવસે સુનિશ્ચિત કર્યા મુજબ, અઠવાડિયામાં એકવાર એક ટેબ્લેટ લેવા પર પાછા ફરો.</li>
-        <li>એક જ દિવસે બે ગોળી ન લો.</li>
+        <li>याद आने पर सुबह एक गोली लें और सप्ताह में एक बार एक गोली लेना शुरू करें, जैसा कि मूल रूप से आपके चुने हुए दिन पर निर्धारित किया गया था.</li>
+        <li>एक ही दिन में दो गोलियाँ न लें।</li>
     </ul>
     </div>
     <div class="disclaimer">
-        <h3 align="center" style="color: red;">Legal Disclaimer</h3>
-        <p>All content is created and published for informational purposes only. It is not intended to be a substitute for professional medical advice and should not be relied on as health or personal advice. Always seek the guidance of your doctor or other qualified health professional with any questions you may have regarding your health or a medical condition. If you think you have a medical emergency, call your doctor or go to the nearest hospital emergency department.</p>
+    <h3 align="center" style="color: red;">Legal Disclaimer</h3>
+    <p>The images shown here are for illustration purposes only. All content is created and published for informational purposes only. It is not intended to be a substitute for professional medical advice and should not be relied on as health or personal advice. Always seek the guidance of your doctor or other qualified health professional with any questions you may have regarding your health or a medical condition. If you think you have a medical emergency, call your doctor or go to the nearest hospital emergency department.</p>
     </div>
     <img src="zuci.png" class="header-image">
 </body>
